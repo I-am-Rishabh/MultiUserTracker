@@ -30,7 +30,8 @@ It allows multiple users to share their location on a live map — perfect for d
    git clone https://github.com/I-am-Rishabh/MultiUserTracker.git
    cd MultiUserTracker
 
-## Terminal
+## 📟 Terminal
+---
 ```bash
 npm install
 ```
