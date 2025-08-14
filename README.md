@@ -3,8 +3,6 @@
 A real-time multi-user tracking system built using **Node.js**, **Socket.io**, and **Leaflet.js**.  
 It allows multiple users to share their location on a live map — perfect for delivery apps, fleet management, event coordination, and more.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue)](https://multiusertracker.onrender.com/)
-*For best experience, open in Chrome browser*
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org/)
 [![Socket.IO](https://img.shields.io/badge/Socket.IO-4.0+-orange)](https://socket.io/)
@@ -26,12 +24,6 @@ It allows multiple users to share their location on a live map — perfect for d
 - **Secure communication** over HTTPS
 - **Scalable and ready for deployment**
 - **Deployed live** on **Render.com**
-
-## 🚀 Live Demo
-
-Experience the application live: **[https://multiusertracker.onrender.com/](https://multiusertracker.onrender.com/)**
-
----
 
 ## 🛠 Tech Stack
 
@@ -153,12 +145,7 @@ socket.on("user-disconnected", (userId) => {
 ## 🌐 Browser Compatibility
 
 - ✅ Chrome 50+
-- ✅ Firefox 45+
-- ✅ Safari 10+
-- ✅ Edge 15+
-- ✅ Mobile Chrome (Android)
-- ✅ Mobile Safari (iOS)
-
+  
 **Note**: HTTPS connection required for geolocation API on most modern browsers.
 
 ## 🚀 Deployment
@@ -176,10 +163,6 @@ socket.on("user-disconnected", (userId) => {
 3. **Commit changes**: `git commit -m 'Add some feature'`
 4. **Push to branch**: `git push origin feature-name`
 5. **Submit a pull request**
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🐛 Known Issues & Troubleshooting
 
