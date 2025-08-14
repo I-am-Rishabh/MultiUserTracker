@@ -19,7 +19,10 @@ if (navigator.geolocation) {
         `Location: ${latitude}, ${longitude} (Accuracy: ${accuracy} meters)`
       );
 
-      // Send location along with userName
+      // Auto-center the map on your current position continuously
+      map.setView([latitude, longitude], 16);
+
+      // Send your location+name to server (existing)
       socket.emit("send-location", { latitude, longitude, userName });
     },
     (error) => {
@@ -31,7 +34,9 @@ if (navigator.geolocation) {
       maximumAge: 0,
     }
   );
-} else {
+}
+
+else {
   console.log("Geolocation is not supported by this browser.");
 }
 
@@ -80,3 +85,5 @@ socket.on("send-location", (data) => {
   // data includes { latitude, longitude, userName }
   io.emit("receive-location", { id: socket.id, ...data });
 });
+
+
